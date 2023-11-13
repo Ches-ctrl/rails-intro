@@ -1,0 +1,19 @@
+<h1>Welcome to our Homepage</h1>
+
+<h2><%= contact = "john"%></h2>
+<h2><% Time.now %></h2>
+<p>Now is <%= Time.now %></p>
+
+<%= link_to("Home", "/") %>
+
+<%= link_to("Contact", contact_path) %>
+
+
+<% members = ["thanh", "dimitri", "germain", "damien", "julien"] %>
+
+<h2>Meet our team</h2>
+<ol>
+  <% members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
